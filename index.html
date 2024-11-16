@@ -1,0 +1,250 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Monaco Chess Club</title>
+		<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper" class="fade-in">
+
+				<!-- Intro -->
+					<div id="intro">
+						<h1>Monaco<br />
+						Chess Club</h1>
+						<p>Le club a été créé en 1949. Il est relativement petit, puisqu'il ne compte que 68 membres, pour la plupart des jeunes âgés de 8 à 20 ans. <br>
+							Néanmoins, nous participons aussi bien à des tournois locaux selon les règlements français qu'à des compétitions internationales.</p>
+						<ul class="actions">
+							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
+						</ul>
+					</div>
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li class="active"><a >Le cercle</a></li>
+							<li><a >Résultats</a></li>
+							<li><a >Nous trouver</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="+tel:+33650576354" class="icon brands fa-whatsapp"><span class="label">Whatsapp</span></a></li>
+							<li><a href="https://www.facebook.com/groups/722958844403190" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+					</div>
+
+
+				<!-- Copyright -->
+					<div id="copyright">
+						Design: <a href="https://www.margauxhaering.fr">margaux haering</a>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+		<script>
+		document.addEventListener("DOMContentLoaded", () => {
+			let navLinks;
+
+			if (window.innerWidth < 500) {
+			    navLinks = document.querySelectorAll("#navPanel nav .links li");
+					const navPanel = document.querySelector("#navPanel");
+					navLinks.forEach(link => {
+					    link.addEventListener("click", () => {
+					        document.body.classList.remove("is-navPanel-visible");
+
+					    });
+					});
+			} else {
+			    navLinks = document.querySelectorAll("#nav .links li");
+			}
+    const mainContent = document.getElementById("main");
+
+    const contentMap = {
+        "Le cercle": `
+				<article class="post featured">
+					<header class="major">
+						<h2><a>Le Cercle d'Echecs de Monaco</a></h2>
+						<p>Le club a été créé en 1949. Il est relativement petit, puisqu'il ne compte que 68 membres, pour la plupart des jeunes âgés de 8 à 20 ans. <br>
+							Néanmoins, nous participons aussi bien à des tournois locaux selon les règlements français qu'à des compétitions internationales.</p>
+					</header>
+					<div class="image main"><img src="chess/images/chess.png" alt="" /></div>
+				</article>
+        `,
+        "Résultats": `
+				<article class="post featured">
+					<header class="major">
+						<h2><a>Les résultats</a></h2>
+						<p>Nous sommes surtout connus pour la force de notre équipe féminine, qui a remporté plusieurs grands championnats. <br><br>Nous avons remporté six fois la Coupe d'échecs féminine européenne (en 2007, 2008, 2010, 2012, 2014, 2016). En outre, en 2015 et 2016, nous sommes arrivés en tête du nouveau championnat d'échecs pour enfants. <br>Nous comptons également quelques vétérans parmi les membres de notre club, les échecs étant un sport très spécial accessible à tous. Il arrive que des enfants jouent contre des adultes et finissent par gagner la partie.</p>
+					</header>
+				</article>
+				<section class="posts">
+					<article>
+						<header>
+							<span class="date">Novembre, 2024</span>
+							<h2>Evenement</h2>
+						</header>
+						<a href="#" class="image fit"><img src="chess/images/pic02.jpg" alt="" /></a>
+						<p>Description des resultats.....</p>
+					</article>
+					<article>
+						<header>
+							<span class="date">Juin, 2024</span>
+							<h2>Evenement</h2>
+						</header>
+						<a href="#" class="image fit"><img src="chess/images/pic02.jpg" alt="" /></a>
+						<p>Description des resultats.....</p>
+					</article>
+					<article>
+						<header>
+							<span class="date">janvier, 2024</span>
+							<h2>Evenement</h2>
+						</header>
+						<a href="#" class="image fit"><img src="chess/images/pic02.jpg" alt="" /></a>
+						<p>Description des resultats.....</p>
+					</article>
+					<article>
+						<header>
+							<span class="date">janvier, 2024</span>
+							<h2>Evenement</h2>
+						</header>
+						<a href="#" class="image fit"><img src="chess/images/pic02.jpg" alt="" /></a>
+						<p>Description des resultats.....</p>
+					</article>
+					<article>
+						<header>
+							<span class="date">Decembre, 2023</span>
+							<h2>Evenement</h2>
+						</header>
+						<a href="#" class="image fit"><img src="chess/images/pic02.jpg" alt="" /></a>
+						<p>Description des resultats.....</p>
+					</article>
+					<article>
+						<header>
+							<span class="date">Octobre, 2023</span>
+							<h2>Evenement</h2>
+						</header>
+						<a href="#" class="image fit"><img src="chess/images/pic02.jpg" alt="" /></a>
+						<p>Description des resultats.....</p>
+					</article>
+				</section>
+        `,
+        "Nous trouver": `
+            <section>
+                <h2>Nous Trouver</h2>
+								<div class="container">
+								<p>Cercle d'Echecs de Monte-Carlo
+								<h4 class="mb-4 pb-lg-2" style='padding-left:30px;'>Horaires</h4>
+
+								<div class="table-responsive">
+										<table class="table text-center">
+												<thead>
+														<tr>
+																<th style="width: 17%;">Lundi</th>
+
+																<th style="width: 16%;">Mardi</th>
+
+																<th style="width: 16%;">Mercredi</th>
+
+																<th style="width: 16%;">Jeudi</th>
+																<th style="width: 16%;">Vendredi</th>
+																<th style="width: 16%;">Samedi</th>
+														</tr>
+												</thead>
+
+												<tbody>
+												<tr>
+														<th style="width: 17%;">16h-19h</th>
+
+														<th style="width: 16%;">16h-19h</th>
+
+														<th style="width: 16%;">14h-18h</th>
+
+														<th style="width: 16%;">16h-19h & 19h-21h</th>
+														<th style="width: 16%;">16h-19h</th>
+														<th style="width: 16%;">14h-18h</th>
+												</tr>
+
+												<tr>
+														<th style="width: 17%;"></th>
+
+														<th style="width: 16%;">débutants</th>
+
+														<th style="width: 16%;"></th>
+
+														<th style="width: 16%;">débutants puis paires libres</th>
+														<th style="width: 16%;">mixtes</th>
+														<th style="width: 16%;">confirmés</th>
+												</tr>
+
+
+
+												</tbody>
+										</table>
+										</div>
+								<ul class="icons">
+								<li><a href="+tel:+33650576354" class="icon brands fa-whatsapp"><span class="label">Whatsapp</span></a></li>
+								<li><a href='mailto:cemc@libello.com' class="icon fa-solid fa-envelope"></a>
+									<li><a href="https://www.facebook.com/groups/722958844403190" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+								</ul>
+								</p>
+								<address>
+										5 rue des oliviers 98000 Monaco
+								</address>
+								<div class='row'>
+								<div class='col-lg-6'>
+
+
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2882.444190582255!2d7.426587912043269!3d43.742871946505495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12cdc27d1d819d35%3A0x6b959676d2b259a1!2s5%20Rue%20des%20Oliviers%2C%2098000%20Monaco!5e0!3m2!1sfr!2sau!4v1731777866191!5m2!1sfr!2sau" width="800" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+								</div>
+								<div class='col-lg-6'>
+								<b>Président du CEMC</b>: Jean-Michel RAPAIRE
+<br><b>Vice Président</b> : Philippe BOTTO
+<br><b>Secrétaire Générale</b> : Catherine GRASSI
+<br><b>Trésorier </b>: Alain De ROCCO
+<br><b>Conseiller</b> : Jean-Charles MATTEI
+								</div>
+								</div>
+            </section>
+        `
+    };
+		function setActiveTab(link) {
+         navLinks.forEach(nav => nav.classList.remove("active"));
+         link.classList.add("active");
+         const linkText = link.textContent.trim();
+         mainContent.innerHTML = contentMap[linkText] || "<p>Content not found.</p>";
+     }
+
+     if (navLinks.length > 0) {
+         setActiveTab(navLinks[0]);
+     }
+
+     navLinks.forEach(link => {
+         link.addEventListener("click", () => setActiveTab(link));
+     });
+
+
+
+ });
+
+</script>
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
